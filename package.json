@@ -1,0 +1,41 @@
+{
+  "name": "nester-social-platform",
+  "version": "1.0.0",
+  "description": "Plateforme sociale révolutionnaire Nester - Le futur des réseaux sociaux",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install",
+    "start": "node server/index.js"
+  },
+  "keywords": ["social", "platform", "nester", "react", "nodejs"],
+  "author": "Nester Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "socket.io": "^4.7.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "express-rate-limit": "^6.10.0",
+    "express-validator": "^7.0.1",
+    "sharp": "^0.32.5",
+    "ffmpeg-static": "^5.2.0",
+    "uuid": "^9.0.0",
+    "moment": "^2.29.4",
+    "i18next": "^23.4.4",
+    "i18next-http-middleware": "^3.5.0",
+    "i18next-fs-backend": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  }
+}
